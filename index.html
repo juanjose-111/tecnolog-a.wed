@@ -1,0 +1,378 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Mi Sitio Web</title> 
+
+  <!-- Se utilizó Bootstrap mediante el uso de componentes -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style> 
+    body { 
+      background-color: hsl(878, 33%, 55%); 
+      color: #333;  
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #222;
+      width: 100%;
+      height: 50px;
+      float: left;
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 15px;
+      display: inline-block;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+      color: #ffcc00;
+    }
+
+    #titulo, #descripcion, #temas, #imagen, #nombre, #contacto, #institución, .texto-grande { 
+      color: hsl(8, 87%, 25%);   
+    } 
+
+    .texto-grande { font-size: 20px; } 
+    .texto-pequeno { font-size: 14px; }
+
+    #descripcion.texto-grande, #temas.texto-grande {
+      background-color: #f7f7f7;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,2.1);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 15px;
+      text-align: center;
+      line-height: 1.6;
+      word-spacing: 3px;
+    }
+
+    th {
+      background-color: #d5dbdb;
+      text-shadow: 1px 1px 1px gray;
+    }
+
+    caption {
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px gray;
+    }
+
+    .rayado {
+      text-decoration: line-through;
+      color: red;
+    }
+
+    .subrayado {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    section article ul li a {
+      font-size: 16px;
+    }
+
+    section article ul li a:hover {
+      color: crimson;
+      text-decoration: underline;
+    }
+
+    .caja-posicion {
+      border: 2px dashed #800;
+      padding: 15px;
+      margin: 20px;
+      position: relative;
+    }
+  </style> 
+</head> 
+<body>
+  <div class="container">
+    <!-- Botón de ejemplo con Bootstrap -->
+    <div class="text-center my-4">
+      <button class="btn btn-primary">¡Explora más!</button>
+    </div>
+
+    <!-- Tarjeta de ejemplo con Bootstrap -->
+    <div class="card mb-4" style="width: 18rem; margin: auto;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTet4D9pGMNCl1ix07pgxbGjJCsxcaH2rzOw&s" class="card-img-top" alt="Redes sociales">
+      <div class="card-body">
+        <h5 class="card-title">Redes Sociales</h5>
+        <p class="card-text">Las redes sociales conectan el mundo, pero también presentan desafíos importantes.</p>
+        <a href="#las redes" class="btn btn-secondary">Leer más</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Mi Sitio Web</title> 
+
+    <style> 
+        body { 
+            background-color: hsl(878, 33%, 55%); 
+            color: #333;  
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #222;
+            width: 100%;
+            height: 50px;
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 15px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            color: #ffcc00;
+        }
+
+        #titulo, #descripcion, #temas, #imagen, #nombre, #contacto, #institución, .texto-grande { 
+            color: hsl(8, 87%, 25%);   
+        } 
+
+        .texto-grande { font-size: 20px; } 
+        .texto-pequeno { font-size: 14px; }
+
+        /* Agrupación de selectores */
+        #descripcion.texto-grande, #temas.texto-grande {
+            background-color: #f7f7f7;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* Estilos para la tabla */
+        table {
+            width: 90%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,2.1);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: center;
+            line-height: 1.6;
+            word-spacing: 3px;
+        }
+
+        th {
+            background-color: #d5dbdb;
+            text-shadow: 1px 1px 1px gray;
+        }
+
+        caption {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px gray;
+        }
+
+        .rayado {
+            text-decoration: line-through;
+            color: red;
+        }
+
+        .subrayado {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        /* Selector descendiente */
+        section article ul li a {
+            font-size: 16px;
+        }
+
+        section article ul li a:hover {
+            color: crimson;
+            text-decoration: underline;
+        }
+
+        .caja-posicion {
+            border: 2px dashed #800;
+            padding: 15px;
+            margin: 20px;
+            position: relative;
+        }
+    </style> 
+</head> 
+
+<body> 
+    <nav>
+        <ul>
+            <li><a href="#titulo">Inicio</a></li>
+            <li><a href="#descripcion">Descripción</a></li>
+            <li><a href="#temas">Temas</a></li>
+            <li><a href="#imagen">Historia</a></li>
+            <li><a href="#las redes">Las redes sociales</a></li>
+          <li><a href="#el futuro">El futuro</a></li>
+          <li><a href="#series">series</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#comparacion">Comparación</a></li>
+        </ul>
+    </nav>
+
+    <header> 
+        <h1 id="titulo">Tecnología y entretenimiento</h1> 
+    </header> 
+
+    <section> 
+        <article> 
+            <h2 id="descripcion" class="texto-grande">Descripción</h2> 
+            <p>Hola a todos, bienvenidos a mi sitio web donde exploramos las maravillas de la tecnología y el entretenimiento. Aquí veremos cómo los videojuegos, las redes sociales y el contenido digital han cambiado nuestra forma de interactuar con el mundo. Desde la historia de los primeros videojuegos hasta el impacto de la inteligencia artificial en el entretenimiento, este sitio es tu guía para entender la evolución tecnológica.</p> 
+        </article> 
+
+        <article> 
+            <h2 id="temas" class="texto-grande">Temas</h2> 
+            <ul> 
+                <li><a href="https://www.fib.upc.edu/retro-informatica/historia/videojocs.html">Historia de los videojuegos</a></li> 
+                <li><a href="https://unicienciabga.edu.co/vive-la-u/egresados/boletines/356-impacto-de-las-redes-sociales-en-la-sociedad">Las redes sociales y su impacto</a></li> 
+                <li><a href="https://www.actiumdigital.es/es/blog/que-es-inteligencia-artificial-como-cambiara-futuro">El futuro de la inteligencia artificial</a></li> 
+                <li><a href="https://www.imdb.com" target="_blank">Series y películas recomendadas del año</a></li> 
+            </ul> 
+        </article> 
+
+        <article>
+            <table>
+                <caption>Avances tecnológicos en el entretenimiento</caption>
+                <thead>
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Descripción</th>
+                        <th>Impacto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="subrayado">Videojuegos</td>
+                        <td>Simulan mundos interactivos que entretienen y educan</td>
+                        <td>Estimulan habilidades mentales y reflejos</td>
+                    </tr>
+                    <tr>
+                        <td class="subrayado">Redes Sociales</td>
+                        <td>Plataformas para compartir contenido e interactuar globalmente</td>
+                        <td class="rayado">Han reemplazado completamente las relaciones físicas</td>
+                    </tr>
+                    <tr>
+                        <td class="subrayado">Streaming</td>
+                        <td>Permite ver contenido en tiempo real sin descargarlo</td>
+                        <td>Transformó la forma de ver cine y televisión</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article id="comparacion" class="caja-posicion">
+            <h2 class="texto-grande">Comparación adicional</h2>
+            <table>
+                <tr>
+                    <th>Tecnología</th>
+                    <th>Entretenimiento</th>
+                </tr>
+                <tr>
+                    <td>Acceso inmediato a información</td>
+                    <td>Conectividad en tiempo real</td>
+                </tr>
+                <tr>
+                    <td>Realidad aumentada</td>
+                    <td>Experiencias inmersivas</td>
+                </tr>
+            </table>
+            <p class="texto-pequeno">Modelo de caja y posición aplicado en esta sección.</p>
+        </article>
+    </section> 
+
+    <aside> 
+        <h2 id="imagen">Historia de los videojuegos</h2>
+        <p>Los primeros videojuegos fueron creados en los años 50 y 60, con el juego "OXO" (1952) de Alexander S. Douglas, fue el primer videojuego considerado. A lo largo de las décadas siguientes, se desarrollaron varios hitos como "Tennis for Two" (1958) de William Higginbotham y "Spacewar" (1962) de Steve Russell, que fue la evolución del videojuego. En los 70, el videojuego doméstico comenzó con la "Magnavox Odyssey", y el mercado de los videojuegos creció con títulos como "Pong" (1972).
+Durante los 80, los videojuegos pasaron a los 8 bits, con consolas como la NES y juegos como "Super Mario Bros" (1985), lo que marcó un cambio hacia objetivos y finales en los juegos. Además, se desarrollaron videojuegos portátiles, destacando la "Game Boy" de Nintendo en 1989.
+En los 90, los videojuegos experimentaron la transición a los gráficos 3D con consolas como la "PlayStation" y "Nintendo 64", y la popularización de juegos como "Final Fantasy VII" y "Metal Gear Solid". La conexión a internet permitió el juego multijugador, y nacieron los "MMORPGs" como "Ultima Online".
+Desde 2000, la industria siguió evolucionando con la llegada de la "PlayStation 2", la "Xbox" de Microsoft y la "Gamecube" de Nintendo. El mercado de los videojuegos se diversificó aún más, y el PC se consolidó como la plataforma más flexible para los jugadores.</p>
+        <img src="https://www.fib.upc.edu/retro-informatica/historia/videojocs/mainColumnParagraphs/04/image/nes.jpg" alt="NES" style="border: 4px solid black;" width="200">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_rlYhgbheKx89UnW_qcWE3p-gHC_jso0FwA&s" alt="Clásico" style="border: 4px solid black;" width="400">
+        <img src="https://www.fib.upc.edu/retro-informatica/historia/videojocs/mainColumnParagraphs/0/image/oxo.jpg" alt="OXO" style="border: 4px solid black;" width="200">
+    </aside>
+        <h2 id="las redes">Las redes sociales y su impacto</h2>
+        <p>Las redes sociales se han convertido en un componente esencial de la vida moderna, transformando la manera en que las personas se comunican, comparten información y se relacionan globalmente. Plataformas como Facebook, Twitter, Instagram, TikTok y YouTube han revolucionado la comunicación haciéndola más diversa, inmediata y con un profundo impacto en esferas políticas, económicas, sociales e interpersonales, pero a pesar de sus grandes ventajas, las redes sociales presentan una doble cara. Por un lado, permiten establecer y mantener conexiones significativas, superar barreras geográficas y facilitar el acceso a información, convirtiéndose en herramientas clave para la educación, el emprendimiento y la proyección personal y profesional. Por otro lado, su mal uso puede generar efectos perjudiciales como la difusión de noticias falsas, la pérdida de privacidad, el ciberacoso y un falso sentido de conexión que, en exceso, puede derivar en aislamiento emocional.
+Además, se destaca la necesidad de promover una educación digital que prepare a los usuarios para interactuar de manera ética, crítica y responsable. No todo lo que puede decirse es útil o edificante; como dice un principio bíblico en 1 Corintios 10:23, “Todo está permitido, pero no todo es provechoso ni constructivo”. Este enfoque invita a reflexionar sobre el uso ético del lenguaje y el respeto hacia los demás.El uso responsable de las redes sociales no solo contribuye al bienestar individual, sino también al de la sociedad en general.</p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6sNa4JtVxyl7cbuZuSj4CO3_xabzR3snu7g&s" width="300">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTet4D9pGMNCl1ix07pgxbGjJCsxcaH2rzOw&s" width="300">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8nmzEUM6B8JtHxj7WnD9gxUxU-Efu5eO4hA&s" alt="OXO" style="border: 4px solid black;" width="300">
+  <h2 id="el futuro">El futuro de la inteligencia artificial</h2>
+        <p>La inteligencia artificial (IA) ha dejado de ser ciencia ficción y se ha integrado de manera silenciosa pero constante en nuestra vida diaria. Aunque su definición exacta sigue siendo motivo de debate, se entiende como el conjunto de técnicas que permiten a las máquinas interpretar datos, aprender y tomar decisiones de forma similar —aunque no idéntica— a los seres humanos. Su objetivo no es imitar el cerebro, sino potenciar sus capacidades, combinando lo mejor del pensamiento humano con la velocidad y precisión de los sistemas informáticos.
+Existen dos niveles de IA: la IA fuerte, que busca crear máquinas con conciencia propia y capacidades superiores a las humanas, aún en desarrollo; y la IA débil, que es la más común hoy, enfocada en tareas específicas mediante algoritmos de aprendizaje automático y profundo. Gracias a esto, vemos IA en asistentes virtuales como Siri, en recomendaciones de productos o películas, y en herramientas de reconocimiento facial.
+La historia de la IA se remonta a los años 50, cuando Alan Turing propuso su famosa "máquina de Turing" y planteó preguntas sobre si las máquinas podrían pensar. En 1956, en la Conferencia de Dartmouth, se acuñó formalmente el término “inteligencia artificial”. A partir de allí, se desarrollaron sistemas como ELIZA (el primer chatbot), Polly (el primer robot móvil) y Deep Blue, que en 1997 venció al campeón mundial de ajedrez Garry Kaspárov.
+Durante el siglo XXI, la IA ha seguido evolucionando con programas como ALICE y con el uso generalizado de asistentes virtuales y sistemas de recomendación. Las grandes empresas tecnológicas han invertido en esta área, expandiendo su presencia en educación, salud, comercio y transporte.
+Respecto al futuro, el Future of Humanity Institute predice que la IA superará a los humanos en múltiples campos: traducción de idiomas (2024), escritura de comentarios (2026), conducción de camiones (2027), ventas (2031), creación literaria (2049), cirugía (2053) e incluso investigación científica (2057). Sin embargo, aunque estas predicciones son optimistas, la evolución de la IA sigue siendo incierta y dependerá tanto del desarrollo tecnológico como de las decisiones éticas y sociales que tomemos.</p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCRI4byUx_MdzeCernphEYrIjIlxhj8SE5-A&s" width="200">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe8fv2JO_gJVm-18p0zgJDW1nH1BInOS0nHw&s" width="300">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOQsTkJsvOSX9991zUPiYpwpNl2I9NygEbLg&s" alt="OXO" style="border: 4px solid black;" width="300">
+  <h2 id="series">Series y películas recomendadas del año</h2>
+        <p>es una base de datos en línea especializada en cine, televisión y celebridades, lanzada en 1990 y propiedad de Amazon desde 1998. Ofrece información detallada sobre millones de películas, series y personas relacionadas con la industria del entretenimiento. Los usuarios pueden calificar y reseñar títulos, contribuyendo a listas como el Top 250. También cuenta con IMDbPro, una versión para profesionales que brinda datos de contacto, producción y herramientas de gestión. Además, permite búsquedas avanzadas, acceso a calendarios de estrenos y participación de la comunidad mediante aportes de información. Está disponible en español a través de imdb.com/es-es y es una fuente confiable tanto para fanáticos como para expertos del medio audiovisual. IMDb en español es una plataforma que ofrece información detallada sobre películas, series y celebridades, incluyendo calificaciones, reseñas y opciones para ver contenido en línea. En su sección principal, destacan las 250 películas mejor valoradas por los usuarios, encabezadas por títulos como 'Sueño de fuga', 'El padrino' y 'Batman: El caballero de la noche'. También presenta las películas más populares del momento, como 'Destino final: Lazos de sangre', 'Nonnas' y 'Pecadores'. Además, proporciona listados de las películas más taquilleras en EE. UU., con títulos recientes como 'Thunderbolts*' y 'Una película de Looney Tunes'. La plataforma permite explorar películas por género, país de origen y otros criterios, ofreciendo una experiencia completa para los aficionados al cine.
+.</p>
+    </aside>
+    <aside> 
+        <h2>Imagen del autor</h2>
+        <img src="https://tinypic.host/images/2025/05/21/mi-foto-para-sitio-web.jpeg" alt="Autor" style="border: 3px solid black;" width="200">
+    </aside> 
+
+    <footer> 
+        <p id="nombre" class="texto-pequeno">Nombre: Juan Jose Charry Quintero</p> 
+        <p id="contacto" class="texto-pequeno">Contacto: juanjose-777@hotmail.com</p> 
+        <p id="institución" class="texto-pequeno">Institución: Skolmi</p> 
+    </footer> 
+</body> 
+</html>
